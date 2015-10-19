@@ -1,0 +1,14 @@
+#ask {
+  text-align: center; }
+  #ask p {
+    font-size: 3em; }
+    #ask p input {
+      width: 2em;
+      text-align: center; }
+
+#result .loading {
+  text-align: center; }
+  #result .loading i {
+    font-size: 4em; }
+
+/*# sourceMappingURL=app.css.map */

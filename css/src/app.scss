@@ -1,0 +1,22 @@
+#ask {
+  text-align: center;
+
+  p {
+    font-size: 3em;
+
+    input {
+      width: 2em;
+      text-align: center;
+    }
+  }
+}
+
+#result {
+  .loading {
+    text-align: center;
+
+    i {
+      font-size: 4em;
+    }
+  }
+}

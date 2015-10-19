@@ -1,1 +1,68 @@
-<h1>Placeholder</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WereWolf Suggestor</title>
+    <link rel="stylesheet" href="css/bootswatch-flatly.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Werewolf Suggestor</h1>
+      <div id="ask" class="well">
+        <p>
+          We are
+          <input id="players-count" type="number" value="12">
+          players. <br>
+        </p>
+        <button id="ask-trigger" class="btn btn-lg btn-primary">Suggest Player Config</button>
+      </div>
+      <div id="result">
+        <div class="loading hidden">
+          <i class="fa fa-spinner fa-spin"></i>
+        </div>
+        <div class="data container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Players Config</h3>
+                </div>
+                <div class="panel-body">
+                  <dl class="players dl-horizontal">
+                    <dt>Wolves</dt>
+                    <dd>3</dd>
+                    <dt>Villagers</dt>
+                    <dd>9</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Probabilities of winning</h3>
+                </div>
+                <div class="panel-body">
+                  <dl class="probabilities dl-horizontal">
+                    <dt>Wolves</dt>
+                    <dd>59%</dd>
+                    <dt>Villagers</dt>
+                    <dd>23%</dd>
+                    <dt>Draw</dt>
+                    <dd>18%</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
