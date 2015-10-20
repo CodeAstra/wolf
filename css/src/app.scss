@@ -19,4 +19,10 @@
       font-size: 4em;
     }
   }
+
+  dl {
+    dt {
+      text-transform: capitalize;
+    }
+  }
 }

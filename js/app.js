@@ -16,7 +16,25 @@ var WereWolf = {
   },
   showResult: function(data){
     WereWolf.hideLoader();
-    $('#result').append(JSON.stringify(data));
+    $('#result .data').removeClass('hidden');
+    WereWolf.populatePlayersData(data.players);
+    WereWolf.populateProbabilitiesData(data.probabilities);
+  },
+  populatePlayersData: function(players) {
+    playersData = "";
+    for(var playerType in players) {
+      playersData += "<dt>" + playerType + "</dt>";
+      playersData += "<dd>" + players[playerType] + "</dd>";
+    }
+    $('#result dl.players').html(playersData);
+  },
+  populateProbabilitiesData: function(probabilities) {
+    probabilitiesData = "";
+    for(var probabilityType in probabilities) {
+      probabilitiesData += "<dt>" + probabilityType.split("_")[0] + "</dt>";
+      probabilitiesData += "<dd>" + probabilities[probabilityType] + "%</dd>"
+    }
+    $('#result dl.probabilities').html(probabilitiesData);
   }
 }
 

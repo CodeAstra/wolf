@@ -10,5 +10,7 @@
   text-align: center; }
   #result .loading i {
     font-size: 4em; }
+#result dl dt {
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=app.css.map */
