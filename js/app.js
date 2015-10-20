@@ -23,7 +23,8 @@ var WereWolf = {
   populatePlayersData: function(players) {
     playersData = "";
     for(var playerType in players) {
-      playersData += "<dt>" + playerType + "</dt>";
+      var nameForDisplay = playerType.split("_").join(" ");
+      playersData += "<dt>" + nameForDisplay + "</dt>";
       playersData += "<dd>" + players[playerType] + "</dd>";
     }
     $('#result dl.players').html(playersData);
